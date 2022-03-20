@@ -10,7 +10,7 @@ int main()
 	c = (a * a) + (b * b);
 	d = sqrt(c);
 	
-	printf("Result: %f \n", d);//another test
+	printf("Result: %f \n", d);
 
 	return 0;
 }
