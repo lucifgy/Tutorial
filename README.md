@@ -3,8 +3,11 @@ This is the tutorial zone for Git and C
 1 - Representation of numbers
 Calculate the product of the lengths of your first name, last name and middle name. Display a binary representation of the 
 following values in the specified data formats:
+
 A) a negative 32-bit integer whose module is equal to the product found;
+
 B) a positive floating-point number of unit precision according to the IEEE 754 standard, the module of which is equal to the product found;
+
 C) a negative double-precision floating-point number according to the IEEE 754 standard, the module of which is equal to the product found.
  
 2 - Pythagorean triples
