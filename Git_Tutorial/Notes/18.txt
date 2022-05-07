@@ -1,0 +1,26 @@
+
+
+A variable in C has an address and a pointer "points" to that adress.
+
+Operator * is used for declaration of pointer and for returning the value of the reference
+
+Operator & is for returning the address of a variable.
+
+Null Pointer: is useful when pointer doesn't have an address assigned. A null pointer always contains value 0;
+
+Void Pointer: is a generic pointer, doesn't have a data type, and is used to store the address of any variable.
+
+Wild Pointer: is a pointer which is not initialized to anything. These pointers are inefficient because the might point to some unknown memory location. One must becareful using them.
+
+There is also Dangling, Complex, Near, Far, Huge pointer types.
+
+ Direct and Indirect access, There is 2 ways to manipulate a variable:
+- With direct access, variable's value accessed with its name,
+Indirect access to the value is done through its address, a pointer variable which points to a variables adress, and we access to the value by accessing the address which holds the value.
+
+a variable holds address of another variable, then  we access to value from address
+
+Pointer arithmatic:
+
+In c a pointer is an adress which is a numeric value, therefore arithemetic operations can be performed, ++ -- + - operations.
+

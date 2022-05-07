@@ -1,0 +1,15 @@
+Binary Decimal Numbers, Saturation arithetic
+
+https://www.cuemath.com/numbers/binary-to-decimal/
+
+Saturation arithmetic:
+
+Is a type of arithmetic where operations are limited to a fixed range, if the result is greater or less than the range, then it'll be clamped to the max or min value.
+For example, if the valid range is between -100 and 100 then the result of the operation will don't exceed 100 or ge below -100. 
+
+60 + 40 = 100
+60 + 50 = 100(due to the range)
+(70 + 40) - 100 = 0
+99 * 99 = 100
+//WIKI 
+

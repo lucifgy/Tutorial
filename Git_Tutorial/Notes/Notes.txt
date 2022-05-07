@@ -1,0 +1,5 @@
+On terminal it's possible to find and remove files rather than deleting 1 by 1.
+
+//find . -name "*.txt" -exec \;
+
+

@@ -8,21 +8,21 @@
 
 int main()
 {
-  char input[50];
+  char input[10], dir[40];
   char ch;
   do {
     printf("1-71(0 exit): ");
     scanf("%s", input);
     if (strcmp(input, "0") == 0) exit(0);
-    strcat(input, ".txt");
+		sprintf(dir, "Notes/%s%s", input, ".txt");
 
     FILE *fp;
-    fp = fopen(input, "r+");
-    if (fp == NULL) fp = fopen(input, "w+");
+    fp = fopen(dir, "r+");
+    if (fp == NULL) fp = fopen(dir, "w+");
 
     char cmd[50];
     strcpy(cmd, "vim ");
-    system(strcat(cmd, input));
+    system(strcat(cmd, dir));
 
     fclose(fp);
   }while (1); 

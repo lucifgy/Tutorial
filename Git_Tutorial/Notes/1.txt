@@ -1,0 +1,7 @@
+Software engineering:
+
+Software engineering is an engineering approach on a software development.
+
+A software engineer is a person who applies the pronciples of software engineering to design-develop computer software. A programmer is smilar but lacks the engeering aspects. We can simply say that a programmer answers the question "how to make it" whilist a software engineer answers the question "how to make it better".
+
+

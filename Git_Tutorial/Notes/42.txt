@@ -1,0 +1,19 @@
+Safe programming, Principles, Examples
+
+Validate input:  Validate input from all untruested data sources.
+ 
+Heed compiler warnings: Compile code using the highest warning level available for your compiler and
+
+Architect and design for security policies: Enforce security policies, if your system requires different priviliges at different times, divide the system into subsystems, each with appropriate privilege set.
+
+Keep it simple: Keep the design as simple and as small as possible.
+
+Default deny: Base access decisions on permission rather than exclusion.
+
+Adhere to the princuple of least privilege: Every process should execute with a minimal set of privileges.
+
+Defense in Depth: //WIKI
+
+Pen testing
+
+ 
