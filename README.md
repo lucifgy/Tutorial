@@ -2,7 +2,7 @@ This is the tutorial zone for Git and C
 
 //
 //
-epresentation of numbers
+1 - Representation of numbers
 Calculate the product of the lengths of your first name, last name and middle name. Display a binary representation of the 
 following values in the specified data formats:
 A) a negative 32-bit integer whose module is equal to the product found;
