@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-//
+
 int main()
 {
   char input[10], dir[40];
@@ -14,7 +14,7 @@ int main()
     printf("1-71(0 exit): ");
     scanf("%s", input);
     if (strcmp(input, "0") == 0) exit(0);
-		sprintf(dir, "Notes/%s%s", input, ".txt");
+    sprintf(dir, "Notes/%s%s", input, ".txt");
 
     FILE *fp;
     fp = fopen(dir, "r+");
