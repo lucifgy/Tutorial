@@ -1,7 +1,5 @@
 This is the tutorial zone for Git and C
 
-//
-//
 1 - Representation of numbers
 Calculate the product of the lengths of your first name, last name and middle name. Display a binary representation of the 
 following values in the specified data formats:
