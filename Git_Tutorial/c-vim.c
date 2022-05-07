@@ -12,7 +12,7 @@ int main()
   do {
     printf("1-71(0 exit): ");
     scanf("%s", input);
-		if (strcmp(input, "0") == 0) exit(0);
+    if (strcmp(input, "0") == 0) exit(0);
     strcat(input, ".txt");
 
     FILE *fp;
