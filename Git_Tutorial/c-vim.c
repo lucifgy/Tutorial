@@ -1,6 +1,7 @@
 //This code opens/creates a txt file then directs it to vim
 //TODO:
 //Option to View or Edit file
+//Input handling, only 0 to 71 input is allowed
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
