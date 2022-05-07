@@ -1,5 +1,8 @@
 On terminal it's possible to find and remove files rather than deleting 1 by 1.
 
-//find . -name "*.txt" -exec \;
+//find . -name "*.txt" -exec rm/cp -rf {} //copyLocation \;
+also possible to copy all selected files.
 
+sprintf to add multiple strings (and to specific positions in the string)
 
+In terminal you can move and rename the file with mv
