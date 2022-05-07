@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 #include <string.h>
 
 void printf_binary_integer(char* prefix, unsigned long long num, int c)
@@ -50,4 +50,6 @@ int main()
 	// print negative double-precison floating-point number according to the IEEE 754 standard,
 	double_product = (double)-product;
 	printf_binary_integer("negative double-precison floating-point number according to the IEEE 754 standard", *((long long*)&double_product), 64);
+
+	return 0;
 }
