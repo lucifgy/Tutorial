@@ -11,6 +11,8 @@ set nolist
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
+colorscheme koehler
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
