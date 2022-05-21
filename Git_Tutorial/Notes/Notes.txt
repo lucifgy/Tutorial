@@ -6,3 +6,9 @@ also possible to copy all selected files.
 sprintf to add multiple strings (and to specific positions in the string)
 
 In terminal you can move and rename the file with mv
+
+cp -rf .vimrc Desktop/C_zone/Tutorial/Git_tutorial
+
+
+Static memory allocation: The compiler allocates the memory before the program runs.
+Dynamic memory allocationm allocates the memory during run time of the program, givin flexibility and better efficiency.
