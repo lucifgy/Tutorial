@@ -2,8 +2,6 @@
 //An algorithym to find out when the lamp gets turned on
 //(when the graph starts peaking)
 //put the limit before the peak
-//add the numbers from first to last point
-//Get the avarage
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
