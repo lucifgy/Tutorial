@@ -7,15 +7,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include "elib.h"
 int main()
 {
-
 	double row_a[2500];
 	double row_b[2500];
 	double row_c[2500];
 	double row_d[2500];
-
 
 	FILE *fp;
 	fp = fopen("curt1.csv", "r");
@@ -28,23 +26,18 @@ int main()
 		i++;
 		if (i >= 16 && i <= 2515) {
 			char *token;
-
 			token = strtok(line, ",");
 			double d = atof(token);
 			row_a[i-16] = d;
-
 			token = strtok(NULL, ",");
 			d = atof(token);
 			row_b[i-16] = d;
-
 			token = strtok(NULL, ",");
 			d = atof(token);
 			row_c[i-16] = d;
-
 			token = strtok(NULL, ",");
 			d = atof(token);
 			row_d[i-16] = d;
-
 		}	
 	}
 	fclose(fp);	
@@ -58,16 +51,14 @@ int main()
 	}
 	fclose(fp_line);
 
-	system("gnuplot -p gp-script.gp");
-	
-
 	double sum = 0.0;
-
-	for (i = 1; i < 2500; i++)
+	for (i = 1; i < 2500; i += 1)
 	{
-		sum = sum + (row_d[i-1] * (row_a[i] - row_a[i-1])) + ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) / 2 ;
+		sum = sum + (row_d[i-1] * (row_a[i] - row_a[i-1])) + ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
 	}
-	printf("%0.14f\n", sum);
 
+	printf("%0.14f\n", sum);
+	gnuplot("plot 'line.txt' with lines");
+	remove("line.txt");
 	return 0;
 }
