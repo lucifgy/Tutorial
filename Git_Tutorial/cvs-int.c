@@ -49,13 +49,15 @@ int main()
 	}
 	fclose(fp_line);
 
-	double sum = 0.0;
-	for (i = 1; i < 2500; i += 1)
+	double sum, sum1 = 0.0;
+	for (i = 1; i < 2500; i += 25)
 	{
 		sum = sum + (row_d[i-1] * (row_a[i] - row_a[i-1])) + ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
-	}
+		sum1 = sum1 + (row_d[i-1] * (row_a[i] - row_a[i-1])) - ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
 
+	}
 	printf("%0.14f\n", sum);
+	printf("%0.15f\n", sum1);
 	gnuplot("plot 'line.txt' with lines");
 	remove("line.txt");
 	return 0;
