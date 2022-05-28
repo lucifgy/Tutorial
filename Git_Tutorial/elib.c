@@ -5,7 +5,7 @@
 void gnuplot(char *input)
 {
 	FILE *fp;
-	fp =	fopen("tmp.gp", "w");
+	fp = fopen("tmp.gp", "w");
 	fprintf(fp, "%s",input);
 	fclose(fp);
 	system("gnuplot -p tmp.gp");
