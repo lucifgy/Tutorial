@@ -49,16 +49,35 @@ int main()
 	}
 	fclose(fp_line);
 
-	double sum, sum1 = 0.0;
-	for (i = 1; i < 2500; i += 25)
+	double sum, sum1, sum2, sum3;
+
+	for (i = 1; i < 2500; i++)
 	{
 		sum = sum + (row_d[i-1] * (row_a[i] - row_a[i-1])) + ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
-		sum1 = sum1 + (row_d[i-1] * (row_a[i] - row_a[i-1])) - ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
-
 	}
-	printf("%0.14f\n", sum);
-	printf("%0.15f\n", sum1);
-	gnuplot("plot 'line.txt' with lines");
+	for(i = 1; i < 2500; i++)
+	{
+		sum1 = sum1 + (row_d[i-1] * (row_a[i] - row_a[i-1])) - ((row_d[i] - row_d[i-1]) * (row_a[i] - row_a[i-1])) * 0.5;
+	}
+	for(i = 1; i < 2500; i++)
+	{
+		sum2 = sum2 + ((row_d[i] + row_d[i-1]) / (float)2) * (row_a[i] - row_a[i-1]); 
+	}
+
+	double h, f;
+	for(i = 1; i < 2499; i++)
+		f = f + row_d[i];
+
+	h = (row_a[2499] - row_a[0]) / 2500;
+	sum3 = 0.5 * h * (row_d[0] + (2 * f) + row_d[2499]);
+	
+
+
+	printf("Rectangle area + triangle: %0.10f\n", sum);
+	printf("Rectangle area - triangle: %0.10f\n", sum1);
+	printf("Trapezoid area sum:        %0.10f\n", sum2);
+	printf("Trapezoid2 area sum:       %0.10f\n", sum3);
+	//gnuplot("plot 'line.txt' with lines");
 	remove("line.txt");
 	return 0;
 }
