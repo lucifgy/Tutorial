@@ -16,10 +16,10 @@ int main()
 	unsigned int x;
 	int i;
 	for (i = 0; i < 32; i++)
-	{						//Alternate
+	{					//Alternate
 		x = pow(2, i) - 1;		//x = x << 1; Shifting bit to get square of 2;
 		if(is_prime(x))			//C doesn't like moving bits then subtracting(?)
-			printf("%d\n", x);		// x - 1 here
+			printf("%d\n", x);	// x - 1 here
 	}
 	return 0;
 }
